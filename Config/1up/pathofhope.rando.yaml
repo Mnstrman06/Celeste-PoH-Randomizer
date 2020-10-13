@@ -1,0 +1,1432 @@
+ASide:
+
+  - Room: "a01"
+
+    Holes:
+
+    - Side: Up
+
+      Idx: 0
+      Kind: inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 0
+      Kind: inout
+  - Room: "a02"
+
+    Holes:
+
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: inout
+      ReqOut:
+        Or:
+        - Dashes: Zero
+          Difficulty: Hard
+      ReqIn:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 0
+      Kind: Inout
+      ReqBoth:
+        Or:
+        - Dashes: Zero
+          Difficulty: Hard
+    - Side: Down
+      Idx: 1
+      Kind: none
+    Tweaks:
+    - Name: "jumpThru"
+      X: 88
+      Y: 168
+      Update:
+        Remove: true
+  - Room: "a03"
+
+    Holes:
+
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Left
+      Idx: 1
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    Tweaks:
+    - Name: "jumpThru"
+      Update: 
+        Add: true
+        X: 192
+        Y: 336
+        Width: 48
+        Height: 8
+    - Name: "jumpThru"
+      X: 200
+      Y: 336
+      Update: 
+        Remove: true
+    Hub: true
+  - Room: "a03_S"
+
+    Holes:
+
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Right
+      Idx: 0
+  - Room: "a04"
+
+    Holes:
+
+    - Side: Up
+      Idx: 0
+      Kind: inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Left
+      Idx: 0
+      Kind: inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Up
+      Idx: 1
+      Kind: out
+    - Side: Down
+      Idx: 0
+      Kind: none
+    Hub: true
+  - Room: "a04_S"
+    Holes:
+
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: Inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+  - Room: "a05"
+    Holes:
+
+    - Side: Up
+      Idx: 0
+      Kind: out
+    - Side: Down
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Left
+      Idx: 0
+      Kind: none
+  - Room: "b01"
+
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Up
+      Idx: 0
+      Kind: inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Right
+      Idx: 0
+      Kind: inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    Tweaks:
+    - Name: "jumpThru"
+      X: 352
+      Y: 264
+      Update:
+        Remove: true
+    Hub: true
+  - Room: "b01_S"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: Inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+  - Room: "b02"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Right
+      Idx: 0
+      Kind: inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    Tweaks:
+    - Name: "spikesRight"
+      X: 248
+      Y: 168
+      Update:
+        Remove: true
+    - Name: "spikesRight"
+      Update: 
+        Add: true
+        X: 248
+        Y: 184
+        Width: 8
+        Height: 32
+  - Room: "b03"
+    Holes:
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Left
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+    Tweaks:
+    - Name: "spikesDown"
+      Update: 
+        Add: true
+        X: 88
+        Y: 8
+        Width: 56
+        Height: 8
+  - Room: "b04"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Up
+      Idx: 1
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+  - Room: "b05"
+    Holes:
+    - Side: Up
+      Idx: 2
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Up
+      Idx: 0
+      Kind: inout
+    - Side: Down
+      Idx: 0
+      Kind: inout
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    Tweaks:
+    - Name: "jumpThru"
+      X: 80
+      Y: 168
+      Update:
+        Remove: true
+    - Name: "jumpThru"
+      Update: 
+        Add: true
+        X: 104
+        Y: 168
+        Width: 16
+        Height: 8
+    Hub: true
+  - Room: "b05_S"
+    Holes:
+    - Side: Down
+      Idx: 1
+      Kind: Inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    ExtraSpace:
+    - X: 576
+      Y: 24
+      Width: 40
+      Height: 32
+    Hub: true
+  - Room: "c01"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: Inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: Inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 1
+      Kind: none
+    Tweaks:
+    - Name: "jumpThru"
+      X: 40
+      Y: 144
+      Update:
+        Remove: true
+    - Name: "dreamBlock"
+      X: 48
+      Y: 152
+      Update:
+        Remove: true
+    - Name: "dreamBlock"
+      Update:
+        Add: true
+        X: 40
+        Y: 144
+        Width: 40
+        Height: 8
+  - Room: "c02"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Up
+      Idx: 0
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+  - Room: "c03"
+    Holes:
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: Inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 0
+      Kind: Inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 1
+      Kind: none
+    Tweaks:
+    - Name: "spikesRight"
+      X: 304
+      Y: 88
+      Update:
+        Remove: true
+    - Name: "spikesRight"
+      Update: 
+        Add: true
+        X: 304
+        Y: 88
+        Width: 8
+        Height: 48
+    - Name: "jumpThru"
+      X: 32
+      Y: 168
+      Update:
+        Remove: true
+    - Name: "jumpThru"
+      Update: 
+        Add: true
+        X: 32
+        Y: 168
+        Width: 8
+        Height: 8
+  - Room: "c04"
+    Holes:
+    - Side: Up
+      Idx: 1
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+  - Room: "c05"
+    Holes:
+    - Side: Up
+      Idx: 0
+      Kind: Out
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 0
+      Kind: In
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+  - Room: "c06"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: Inout
+    - Side: Left
+      Idx: 0
+      Kind: Inout
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+    Tweaks:
+    - Name: "jumpThru"
+      X: 104
+      Y: 152
+      Update:
+        Remove: true
+    Hub: true
+  - Room: "c06_S"
+    Holes:
+    - Side: Right
+      Idx: 0
+      Kind: Inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Up
+      Idx: 0
+      Kind: none
+  - Room: "c07"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+    - Side: Right
+      Idx: 1
+      Kind: none
+    Tweaks:
+    - Name: "spikesLeft"
+      Update:
+        Add: true
+        X: 304
+        Y: 304
+        Width: 8
+        Height: 8
+    End: true
+  - Room: "c07_?"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: none
+  - Room: "b03_C"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+BSide:
+  - Room: "ba01"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Left
+      Idx: 0
+      Kind: none
+  - Room: "ba02"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Left
+      Idx: 0
+      Kind: inout
+      ReqOut:
+        Or:
+        - Dashes: one
+        - Dashes: two
+      ReqIn:
+        Or:
+        - Dashes: one
+          Difficulty: Hard
+        - Dashes: two
+    Tweaks:
+    - Name: "refill"
+      Update:
+        Add: true
+        X: 184
+        Y: 104
+        Values:
+          twoDash: false
+          oneUse: false
+    - Name: "spikesLeft"
+      Update:
+        Add: true
+        X: 192
+        Y: 32
+        Width: 8
+        Height: 48
+    - Name: "spikesLeft"
+      X: 184
+      Y: 32
+      Update:
+        Remove: true
+  - Room: "ba03"
+    Holes:
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: in
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: Hard
+        - Dashes: two
+    - Side: Right
+      Idx: 0
+      Kind: none
+    - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Hard
+        - Dashes: two
+  - Room: "ba04"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: Inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Up
+      Idx: 0
+      Kind: Inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    Tweaks:
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 48
+        Y: 24
+    - Name: "spikesLeft"
+      X: 64
+      Y: 56
+      Update:
+        Remove: true
+    - Name: "jumpThru"
+      X: 32
+      Y: 168
+      Update:
+        Remove: true
+    - Name: "jumpThru"
+      Update:
+        Add: true
+        X: 32
+        Y: 168
+        Width: 8
+        Height: 8
+    - Name: "jumpThru"
+      Update:
+        Add: true
+        X: 56
+        Y: 168
+        Width: 8
+        Height: 8
+    - Name: "dreamBlock"
+      X: 32
+      Y: -16
+      Update:
+        Remove: true
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 64
+        Y: 168
+    - Name: "spawn"
+      X: 48
+      Y: 160
+      Update:
+        Remove: true
+  - Room: "ba05"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    Tweaks:
+    - Name: "dreamBlock"
+      X: 32
+      Y: 168
+      Update:
+        Remove: true
+    - Name: "spikesUp"
+      X: 32
+      Y: 160
+      Update:
+        Remove: true
+  - Room: "bb01"
+    Holes:
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Up
+      Idx: 0
+      Kind: none
+    Tweaks:
+    - Name: "dreamBlock"
+      X: 56
+      Y: 160
+      Update:
+        Remove: true
+    - Name: "spikesUp"
+      X: 56
+      Y: 152
+      Update:
+        Remove: true
+  - Room: "bb02"
+    Holes:
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Hard
+        - Dashes: two
+    - Side: Down
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Hard
+        - Dashes: two
+    Tweaks:
+    - Name: "dreamBlock"
+      X: 72
+      Y: 472
+      Update:
+        Remove: true
+  - Room: "bb03"
+    Holes:
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Hard
+        - Dashes: two
+    - Side: Left
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Hard
+        - Dashes: two
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+  - Room: "bb04"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Left
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Up
+      Idx: 1
+      Kind: out
+    - Side: Up
+      Idx: 0
+      Kind: none
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    Tweaks:
+    - Name: "dreamBlock"
+      X: -56
+      Y: 104
+      Update:
+        Remove: true
+    - Name: "spikesRight"
+      X: 24
+      Y: 96
+      Update:
+        Remove: true
+  - Room: "bb05"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Hard
+        - Dashes: two
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Hard
+        - Dashes: two
+    - Side: Up
+      Idx: 0
+      Kind: none
+  - Room: "bb06"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+      ReqOut:
+        Or:
+        - Dashes: one
+          Difficulty: Expert
+        - Dashes: two
+      ReqIn:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Right
+      Idx: 0
+      Kind: inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+    Tweaks:
+    - Name: "spikesRight"
+      X: 56
+      Y: 64
+      Update:
+        Remove: true
+    - Name: "spikesDown"
+      X: 16
+      Y: 80
+      Update:
+        Remove: true
+    - Name: "spikesDown"
+      Update:
+        Add: true
+        X: 16
+        Y: 80
+        Width: 24
+        Height: 8
+  - Room: "bc02"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Hard
+        - Dashes: two
+          Difficulty: Hard
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Hard
+        - Dashes: two
+          Difficulty: Hard
+    - Side: Down
+      Idx: 1
+      Kind: none
+  - Room: "bc03"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+  - Room: "bc04"
+    Holes:
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Expert
+        - Dashes: two
+          Difficulty: Hard
+    - Side: Left
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Expert
+        - Dashes: two
+          Difficulty: Hard
+  - Room: "bc05"
+    Holes:
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Right
+      Idx: 0
+      Kind: inout
+    Tweaks:
+    - Name: "invisibleBarrier"
+      X: -8
+      Y: 88
+      Update:
+        Remove: true
+  - Room: "bc06"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Hard
+        - Dashes: two
+          Difficulty: Hard
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 4
+      Kind: none
+    End: true
+  - Room: "bc01"
+    Holes:
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Left
+      Idx: 0
+      Kind: inout
+      ReqBoth:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    - Side: Up
+      Idx: 1
+      Kind: inout
+      ReqOut:
+        Or:
+        - Dashes: one
+        - Dashes: two
+      ReqIn:
+        Or:
+        - Dashes: two
+          Difficulty: Hard
+    Tweaks:
+    - Name: "spikesRight"
+      X: 280
+      Y: 64
+      Update:
+        Remove: true
+    - Name: "spikesDown"
+      Update:
+        Add: true
+        X: 256
+        Y: 88
+        Width: 24
+        Height: 8
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 440
+        Y: 24
+CSide:
+  - Room: "ca01"
+    Holes:
+    - Side: Left
+      Idx: 0
+      Kind: inout
+    - Side: Down
+      Idx: 0
+      Kind: inout
+      ReqIn:
+        Or:
+        - Dashes: one
+        - Dashes: two
+    Tweaks:
+    - Name: "invisibleBarrier"
+      X: 88
+      Y: 48
+      Update:
+        Remove: true
+    - Name: "invisibleBarrier"
+      X: 56
+      Y: 120
+      Update:
+        Remove: true
+    - Name: "spawn"
+      Update:
+        Add: true
+        X: 64
+        Y: 120
+    - Name: "spawn"
+      X: 96
+      Y: 112
+      Update:
+        Remove: true
+  - Room: "ca02"
+    Holes:
+    - Side: Up
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Expert
+        - Dashes: two
+          Difficulty: Hard
+    - Side: Right
+      Idx: 0
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Expert
+        - Dashes: two
+          Difficulty: Hard
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+  - Room: "ca03"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: none
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Down
+      Idx: 4
+      Kind: none
+    - Side: Down
+      Idx: 5
+      Kind: none
+    - Side: Down
+      Idx: 6
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Up
+      Idx: 2
+      Kind: none
+    - Side: Up
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 4
+      Kind: none
+    - Side: Up
+      Idx: 5
+      Kind: none
+    - Side: Left
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Expert
+        - Dashes: two
+          Difficulty: Expert
+    - Side: Right
+      New: true
+      LowBound: 1
+      HighBound: 3
+      Kind: out
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Expert
+        - Dashes: two
+          Difficulty: Expert
+    Tweaks:
+    - Name: "dreamBlock"
+      Update:
+        Add: true
+        X: 1240
+        Y: 8
+        Width: 48
+        Height: 24
+    - Name: "dreamBlock"
+      X: 1240
+      Y: 8
+      Update:
+        Remove: true
+  - Room: "ca04"
+    Holes:
+    - Side: Down
+      Idx: 0
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Expert
+        - Dashes: two
+          Difficulty: Expert
+    - Side: Down
+      Idx: 1
+      Kind: none
+    - Side: Down
+      Idx: 2
+      Kind: none
+    - Side: Down
+      Idx: 3
+      Kind: none
+    - Side: Up
+      Idx: 0
+      Kind: none
+    - Side: Up
+      Idx: 1
+      Kind: none
+    - Side: Left
+      New: true
+      LowBound: 8
+      HighBound: 10
+      Kind: in
+      ReqBoth:
+        Or:
+        - Dashes: one
+          Difficulty: Expert
+        - Dashes: two
+          Difficulty: Expert
+    Tweaks:
+    - Name: "dreamBlock"
+      X: -40
+      Y: 8
+      Update:
+        Remove: true
+    - Name: "spikesRight"
+      X: 48
+      Y: 8
+      Update:
+        Remove: true
+    - Name: "spikesDown"
+      X: 24
+      Y: 32
+      Update:
+        Remove: true
+    - Name: "fgTiles"
+      X: 0
+      Y: 8
+      Update:
+        Tile: 0
+    - Name: "fgTiles"
+      X: 0
+      Y: 9
+      Update:
+        Tile: 0
+    - Name: "fgTiles"
+      X: 0
+      Y: 10
+      Update:
+        Tile: 0
+    - Name: "fgTiles"
+      X: 1
+      Y: 8
+      Update:
+        Tile: 0
+    - Name: "fgTiles"
+      X: 1
+      Y: 9
+      Update:
+        Tile: 0
+    - Name: "fgTiles"
+      X: 1
+      Y: 10
+      Update:
+        Tile: 0
+    End: true
+
+
+
