@@ -3,24 +3,25 @@ CollectableNames:
   - "key"
 Music:
   - Name: "event:/PathofHope/FieldofHopesandDreams"
-
-    Weight: 7
+    Weight: 5
   - Name: "event:/PathofHope/RMX_Field"
-
-    Weight: 7
+    Weight: 5
   - Name: "event:/PathofHope/CSide_RudeBuster"
-
-
-    Weight: 7
+    Weight: 2
   - Name: "event:/PathofHope/DR_RudeBuster"
-
-    Weight: 7
+    Weight: 2
   - Name: "event:/PathofHope/Bird_Intermission"
-
-    Weight: 7
+    Weight: 3
   - Name: "event:/PathofHope/Lovania_Field"
-    Weight: 7
+    Weight: 3
   - Name: "event:/PathofHope/WorldRevolving"
-    Weight: 7
+    Weight: 2
   - Name: "event:/PathofHope/MegaloRevolving"
-    Weight: 7
+    Weight: 2
+Campaigns:
+  - Name: "Path of Hope"
+    LevelSets:
+      - "1up/pathofhope"
+      - "1up/pathofhope-B"
+      - "1up/pathofhope-C"
+      - "1up_S/PoHSecret"
